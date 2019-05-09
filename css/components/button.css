@@ -1,0 +1,36 @@
+.btn-white {
+  border: #F0F0F0 solid 1px;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 4px;
+  background-color: white;
+  color: black;
+  transition: color 0.2s;
+}
+
+.btn-white:hover {
+  border: black solid 1px;
+  color: darkgrey;
+}
+
+.btn-flat {
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-width: 1px;
+}
+
+.btn-dribbble {
+  background: white;
+  border: 1px solid rgb(240, 240, 240);
+  border-radius: 4px;
+  color: gray;
+  padding: 4px 8px;
+  margin: 8px;
+  display: inline-block;
+}
+
+.btn-dribbble:hover {
+  color: black;
+}

@@ -1,0 +1,518 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Frontend Cheat Sheet</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Source+Serif+Pro" rel="stylesheet">
+<!--     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- Leave those next 4 lines if you care about users using IE8 -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <!-- avatar -->
+      <a class="navbar-brand" href="https://github.com/AgP42" target="_blank">
+        <img class="avatar" alt="avatar" src="https://kitt.lewagon.com/placeholder/users/AgP42" />
+      </a>
+      <!-- responsive button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#">1. Usefull links <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#UI_components">2. UI components</a>
+          <a class="nav-item nav-link" href="#mise_en_page">3. Mise en page</a>
+        </div>
+      </div>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#">FrontEnd</a>
+          <a class="nav-item nav-link" href="backend.html">Backend</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="row">
+
+      <div class="container">
+
+      <h1 class="text-center m-5" id="usefull_links">Frontend Cheat Sheet Le Wagon</h1>
+
+      <h2 class="text-center m-2" id="usefull_links">1- Usefull links</h2>
+
+      <div class="row">
+
+        <div class="col-lg-4">
+          <div class="card p-2 m-1 bg-beige">
+            <h3>Components, ready to use</h3>
+            <a href="https://uikit.lewagon.com/documentation" class="btn btn-light btn-flat btn-flat m-2" target="_blank">Le Wagon UI Kit</a>
+            <a href="https://lewagon.github.io/ui-components/" class="btn btn-light btn-flat m-2" target="_blank">Le Wagon UI Components (older)</a>
+            <a href="https://codepen.io/" class="btn btn-light btn-flat m-2" target="_blank">Codepen (collection of modules + editor !)</a>
+            <a href="http://getbootstrap.com/components/" class="btn btn-light btn-flat m-2" target="_blank">Bootstrap components</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card p-2 m-1 bg-beige">
+            <h3>Documentation</h3>
+            <a href="https://docs.google.com/document/d/1rgDDgH-JlIW6i27jB-Yr_77Oi7rnshTYXZ-MptnALhY/edit#" class="btn btn-light btn-flat m-2" target="_blank">Fiche Perso (GDoc)</a>
+            <a href="https://getbootstrap.com/docs/" class="btn btn-light btn-flat m-2" target="_blank">Bootstrap</a>
+            <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" class="btn btn-light btn-flat m-2" target="_blank">css-tricks - Flexbox</a>
+            <a href="https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/1608902-memento-des-proprietes-css" class="btn btn-light btn-flat m-2" target="_blank">Openclassrooms Memento CSS</a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="btn btn-light btn-flat m-2" target="_blank">MDN Javascript</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card p-2 m-1 bg-beige">
+            <h3>Docu Le Wagon</h3>
+            <a href="https://kitt.lewagon.com/knowledge/lectures/04-Front-End%2F01-HTML-and-CSS#source" class="btn btn-light btn-flat m-2" target="_blank">Le Wagon Cours Frontend</a>
+            <a href="https://kitt.lewagon.com/knowledge/cheatsheets/javascript" class="btn btn-light btn-flat m-2" target="_blank">Le Wagon - Javascript</a>
+            <a href="https://kitt.lewagon.com/knowledge/cheatsheets/flexbox" class="btn btn-light btn-flat m-2" target="_blank">Le Wagon - Flexbox</a>
+            <a href="https://lewagon.github.io/landing/" class="btn btn-light btn-flat m-2" target="_blank">2h landing page</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-6 col-lg-4 col-xl-3">
+          <div class="card p-2 m-1 bg-light">
+            <h3>Font</h3>
+            <a href="https://fonts.google.com/" class="btn bg-black-coral btn-flat m-2" target="_blank">Google font</a>
+            <a href="https://fontpair.co/" class="btn bg-black-coral btn-flat m-2" target="_blank">fontpair.co</a>
+            <a href="https://www.fontsquirrel.com/" class="btn bg-black-coral btn-flat m-2" target="_blank">fontsquirrel</a>
+            <a href="https://www.dafont.com/" class="btn bg-black-coral btn-flat m-2" target="_blank">dafont</a>
+            <a href="https://www.cssfontstack.com/" class="btn bg-black-coral btn-flat m-2" target="_blank">cssfontstack</a>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 col-xl-3">
+          <div class="card p-2 m-1 bg-light">
+            <h3>Color</h3>
+            <a href="https://colorhunt.co/" class="btn bg-acajou btn-flat m-2" target="_blank">colorhunt.co (color palettes)</a>
+            <a href="https://coolors.co/app" class="btn bg-acajou btn-flat m-2" target="_blank">coolors.co (palettes generator)</a>
+            <a href="https://picular.co/" class="btn bg-acajou btn-flat m-2" target="_blank">picular.co (colors according to keyword)</a>
+            <a href="https://color.adobe.com/fr/create/color-wheel/" class="btn bg-acajou btn-flat m-2" target="_blank">Adobe color-picker</a>
+            <a href="https://uigradients.com/#Bupe" class="btn bg-acajou btn-flat m-2" target="_blank">uigradients (css linear-gradient generator)</a>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 col-xl-3">
+          <div class="card p-2 m-1 bg-light">
+            <h3>Free Images</h3>
+            <a href="https://www.pexels.com/" class="btn bg-blondi-blue btn-flat m-2" target="_blank">pexels (free stock photos)</a>
+            <a href="https://unsplash.com/collections" class="btn bg-blondi-blue btn-flat m-2" target="_blank">unsplash (pictures free to use)</a>
+            <a href="https://picsum.photos/" class="btn bg-blondi-blue btn-flat m-2" target="_blank">picsum (random & img options)</a>
+            <a href="http://lorempixel.com/" class="btn bg-blondi-blue btn-flat m-2" target="_blank">lorempixel (random by keyword)</a>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 col-xl-3">
+          <div class="card p-2 m-1 bg-light">
+            <h3>Icones</h3>
+            <a href="https://fontawesome.com/start" class="btn bg-grey-spanish btn-flat m-2" target="_blank">fontawesome.com</a>
+            <a href="https://thenounproject.com/" class="btn bg-grey-spanish btn-flat m-2" target="_blank">thenounproject.com</a>
+            <a href="https://material.io/tools/icons/?style=baseline" class="btn bg-grey-spanish btn-flat m-2" target="_blank">Material design icons</a>
+            <a href="https://www.flaticon.com/" class="btn bg-grey-spanish btn-flat m-2" target="_blank">flaticon (free icons, with editor)</a>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 col-xl-3">
+          <div class="card p-2 m-1 bg-light">
+            <h3>Design inspiration</h3>
+            <a href="https://dribbble.com/" class="btn bg-lapis-lazuli btn-flat m-2" target="_blank">dribbble (Instagram for designers)</a>
+            <a href="https://getbootstrap.com/docs/4.2/examples/" class="btn bg-lapis-lazuli btn-flat m-2" target="_blank">Bootstrap examples</a>
+            <a href="https://www.awwwards.com/" class="btn bg-lapis-lazuli btn-flat m-2" target="_blank">awwwards (awards of website design)</a>
+            <a href="https://goodui.org/" class="btn bg-lapis-lazuli btn-flat m-2" target="_blank">GoodUI (UI ideas & best practices)</a>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 col-xl-3">
+          <div class="card p-2 m-1 bg-light">
+            <h3>Others</h3>
+            <a href="http://www.webdesigner.world/" class="btn bg-prune btn-flat m-2" target="_blank">webdesigner.world (List of other websites)</a>
+            <a href="https://www.typeform.com/" class="btn bg-prune btn-flat m-2" target="_blank">typeform (survey)</a>
+            <a href="https://logojoy.com/logo-maker/" class="btn bg-prune btn-flat m-2" target="_blank">logojoy (logo-maker)</a>
+            <a href="https://jsbin.com/?html,output" class="btn bg-prune btn-flat m-2" target="_blank">JSBin</a>
+          </div>
+        </div>
+
+      </div> <!-- fin row liens-->
+
+      <h2 class="text-center m-5" id="UI_components">2- UI components Perso</h2>
+
+      <h3>Avatar design</h3>
+      <img class="avatar-large" alt="avatar" src="https://kitt.lewagon.com/placeholder/users/AgP42" />
+
+      <h3>Button design</h3>
+      <a href="#" class="btn-white">btn-white</a>
+      <a href="#" class="btn btn-primary btn-flat m-2">btn-flat</a>
+      <a href="#" class="btn-dribbble">btn-dribbble</a>
+
+      <h3>Dropdown design</h3>
+      <div class="dropdown">
+        <img src="https://kitt.lewagon.com/placeholder/users/AgP42" alt="" class="avatar-square dropdown-toggle" id="navbar-menu" data-toggle="dropdown">
+        <ul class="dropdown-menu" aria-labelledby="navbar-menu">
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </div>
+
+      <h3>Card design</h3>
+
+<!-- polaroid white -->
+      <div class="container">
+        <h4>Polaroid Card</h4>
+        <div class="row">
+
+          <div class="card-polaroid">
+            <img src="https://images.unsplash.com/photo-1536006426750-c730049f536a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=701&q=80" alt="Ruby">
+            <div class="">
+              <div>
+                <h2>Discover Ruby</h2>
+                <p>Ruby is an interpreted, high-level, general-purpose programming language.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-polaroid">
+            <img src="https://images.unsplash.com/27/type-set.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1962&q=80" alt="Ruby">
+            <div class="card-polaroid-details">
+              <div>
+                <h2>Object-oriented programming</h2>
+                <p>OOP is a programming paradigm based on the concept of "objects".</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-polaroid">
+            <img src="https://images.unsplash.com/photo-1526152505827-d2f3b5b4a52a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="DB">
+            <div class="card-polaroid-details">
+              <div>
+                <h2>Data Bases</h2>
+                <p>A database is an organized collection of data.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+<!-- Polaroid Black -->
+      <div class="container">
+        <h4>Polaroid Card Black</h4>
+        <div class="row">
+
+          <div class="card-polaroid card-polaroid-black">
+            <img src="https://images.unsplash.com/photo-1529603992250-a55acb77d146?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Ruby">
+            <div class="">
+              <div>
+                <h2>HTML</h2>
+                <p>Hypertext Markup Language is the standard language for web pages and web applications.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-polaroid card-polaroid-black">
+            <img src="https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="CSS">
+            <div class="">
+              <div>
+                <h2>CSS</h2>
+                <p>Cascading Style Sheets is a style sheet language used for HTML style.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-polaroid card-polaroid-black">
+            <img src="https://images.unsplash.com/photo-1482745637430-91c0bbcea3e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="JS">
+            <div class="">
+              <div>
+                <h2>JavaScript</h2>
+                <p>JavaScript enables interactive web pages and is an essential part of web applications.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+<!-- dribbble card -->
+      <div class="container">
+
+        <h4>Dribbble card design</h4>
+        <a href="https://arthur-littm.github.io/dribbble-card-solution/index#">Source</a>
+        <div class="cards">
+          <div class="card-container">
+            <div class="card-white">
+              <div class="card-white-image" style="background-image: url('https://source.unsplash.com/random');">
+                <a href="#" class="btn-dribbble">Save</a>
+              </div>
+              <ul class="list-inline">
+                <li><i class="fas fa-eye"></i> 90</li>
+                <li><i class="fas fa-comment"></i> 10</li>
+                <li><i class="fas fa-heart"></i> 24</li>
+              </ul>
+            </div>
+            <div class="card-user">
+
+              <img src="https://kitt.lewagon.com/placeholder/users/arthur-littm" alt="arthur-littm" class="avatar"><a href="alt">arthur-littm</a>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card-white">
+              <div class="card-white-image" style="background-image: url('https://source.unsplash.com/daily');">
+                <a href="#" class="btn-dribbble">Save</a>
+              </div>
+              <ul class="list-inline">
+                <li><i class="fas fa-eye"></i> 90</li>
+                <li><i class="fas fa-comment"></i> 10</li>
+                <li><i class="fas fa-heart"></i> 24</li>
+              </ul>
+            </div>
+            <div class="card-user">
+
+              <img src="https://kitt.lewagon.com/placeholder/users/arthur-littm" alt="arthur-littm" class="avatar"><a href="alt">arthur-littm</a>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card-white">
+              <div class="card-white-image" style="background-image: url('https://source.unsplash.com/weekly');">
+                <a href="#" class="btn-dribbble">Save</a>
+              </div>
+              <ul class="list-inline">
+                <li><i class="fas fa-eye"></i> 90</li>
+                <li><i class="fas fa-comment"></i> 10</li>
+                <li><i class="fas fa-heart"></i> 24</li>
+              </ul>
+            </div>
+            <div class="card-user">
+
+              <img src="https://kitt.lewagon.com/placeholder/users/arthur-littm" alt="arthur-littm" class="avatar"><a href="alt">arthur-littm</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- fin dribbble -->
+
+      <!-- debut le monde cards -->
+      <h4>Card Lemonde</h4>
+
+      <a href="https://www.lemonde.fr/" target="_blank">Card Lemonde
+        <img src="img/card-lemonde.png" alt="">
+      </a>
+
+      <!-- <section class="area area--section old__area old__area--section">
+        <h4 class="area__title area__title--selection old__area-title">Sélection de la rédaction</h4>
+
+        <div class="article article--featured old__article-square">
+          <a href="https://www.lemonde.fr/international/article/2019/05/08/enquete-russe-impots-trump-s-oppose-a-toutes-les-tentatives-de-controle-des-democrates_5459512_3210.html">
+            <div class="article__media-container">
+            <picture class="article__media">
+              <img data-srcset="https://img.lemde.fr/2019/05/07/0/0/3499/2333/286/0/75/0/2b9a24b_WAS106_USA-TRUMP-MELANIA_0507_11.JPG 286w" data-src="https://img.lemde.fr/2019/05/07/0/0/3499/2333/664/0/75/0/2b9a24b_WAS106_USA-TRUMP-MELANIA_0507_11.JPG" class="loaded" srcset="https://img.lemde.fr/2019/05/07/0/0/3499/2333/286/0/75/0/2b9a24b_WAS106_USA-TRUMP-MELANIA_0507_11.JPG 286w" src="https://img.lemde.fr/2019/05/07/0/0/3499/2333/664/0/75/0/2b9a24b_WAS106_USA-TRUMP-MELANIA_0507_11.JPG" data-was-processed="true">
+              <img src="https://img.lemde.fr/2019/05/07/0/0/3499/2333/664/0/75/0/2b9a24b_WAS106_USA-TRUMP-MELANIA_0507_11.JPG" alt="Donald Trump à la Maison Blanche, à Washington, le 7 mai."> </noscript> </picture>
+            </div>
+              <div class="article__wrapper">
+                <p class="article__type">Décryptages</p>
+                <p class="article__byline">  Gilles Paris </p>
+                <p class="article__title">
+                  <span class="icon__premium"><span class="sr-only">Article réservé à nos abonnés</span></span>
+                  <span class="article__title-label">Enquête russe, impôts&nbsp;: Trump s’oppose à&nbsp;toutes les tentatives de contrôle des démocrates</span> </p>
+                  <p class="article__desc">En refusant d’accéder à la moindre de leurs demand...</p>
+              </div>
+              <p class="article__info">3 min de lecture </p>  </a>
+        </div>
+
+        <div class="article article--featured old__article-square">  <a href="https://www.lemonde.fr/campus/article/2019/05/07/malaise-sentiment-d-illegitimite-une-jeune-interne-en-psychiatrie-raconte-ses-doutes_5459357_4401467.html">
+                    <div class="article__media-container"> <picture class="article__media">
+                      <img data-srcset="https://img.lemde.fr/2019/05/02/1041/463/1038/692/664/0/75/0/31e6df1_kCiuQj7k5Fb7aeHgzLoHU3sQ.jpg 664w, https://img.lemde.fr/2019/05/02/1041/463/1038/692/286/0/75/0/31e6df1_kCiuQj7k5Fb7aeHgzLoHU3sQ.jpg 286w" data-src="https://img.lemde.fr/2019/05/02/1041/463/1038/692/664/0/75/0/31e6df1_kCiuQj7k5Fb7aeHgzLoHU3sQ.jpg" class="loaded" srcset="https://img.lemde.fr/2019/05/02/1041/463/1038/692/664/0/75/0/31e6df1_kCiuQj7k5Fb7aeHgzLoHU3sQ.jpg 664w, https://img.lemde.fr/2019/05/02/1041/463/1038/692/286/0/75/0/31e6df1_kCiuQj7k5Fb7aeHgzLoHU3sQ.jpg 286w" src="https://img.lemde.fr/2019/05/02/1041/463/1038/692/664/0/75/0/31e6df1_kCiuQj7k5Fb7aeHgzLoHU3sQ.jpg" data-was-processed="true">
+                      <noscript>
+                        <img src="https://img.lemde.fr/2019/05/02/1041/463/1038/692/664/0/75/0/31e6df1_kCiuQj7k5Fb7aeHgzLoHU3sQ.jpg" alt="Planche extraite de la bande dessinée de Claire Le Men "Le Syndrome de l'imposteur, parcours d'une interne en psychiatrie"."> </noscript> </picture>
+                      </div>
+                        <div class="article__wrapper">
+                          <p class="article__type">Entretien</p>
+                           <p class="article__byline">  Léa Iribarnegaray </p>
+                           <p class="article__title"><span class="icon__premium"><span class="sr-only">Article réservé à nos abonnés</span></span>
+                             <span class="article__title-label">«&nbsp;C’est comme si la psychiatrie était une religion, j’étais devenue mécréante&nbsp;»&nbsp;: une jeune interne raconte ses doutes</span> </p>
+                             <p class="article__desc">Claire Le Men raconte son changement de voie en plein internat en psychiatrie dans une BD, « Le Syndrome de l’imposteur, parcours d’une interne en psychiatrie ».</p> </div>  <p class="article__info">6 min de lecture </p>  </a>
+        </div>
+
+        <div class="article article--featured old__article-square">
+                               <a href="https://www.lemonde.fr/les-decodeurs/article/2019/05/07/comment-marchent-les-elections-europeennes-le-petit-guide-pour-tout-comprendre_5459284_4355770.html">
+                                 <div class="article__media-container"> <picture class="article__media">
+                                 <img data-srcset="https://img.lemde.fr/2019/04/16/0/0/3000/2000/664/0/75/0/122964c_6RwkVqmtdC03VQJuQQvlfUZK.png 664w, https://img.lemde.fr/2019/04/16/0/0/3000/2000/286/0/75/0/122964c_6RwkVqmtdC03VQJuQQvlfUZK.png 286w" data-src="https://img.lemde.fr/2019/04/16/0/0/3000/2000/664/0/75/0/122964c_6RwkVqmtdC03VQJuQQvlfUZK.png" class="loaded" srcset="https://img.lemde.fr/2019/04/16/0/0/3000/2000/664/0/75/0/122964c_6RwkVqmtdC03VQJuQQvlfUZK.png 664w, https://img.lemde.fr/2019/04/16/0/0/3000/2000/286/0/75/0/122964c_6RwkVqmtdC03VQJuQQvlfUZK.png 286w" src="https://img.lemde.fr/2019/04/16/0/0/3000/2000/664/0/75/0/122964c_6RwkVqmtdC03VQJuQQvlfUZK.png" data-was-processed="true">  <noscript> <img src="https://img.lemde.fr/2019/04/16/0/0/3000/2000/664/0/75/0/122964c_6RwkVqmtdC03VQJuQQvlfUZK.png" alt=""> </noscript> </picture> </div>
+                                 <div class="article__wrapper">  <p class="article__type">Décryptages</p> <p class="article__byline">  Agathe Dahyot et  Maxime Vaudano </p>
+                                   <p class="article__title"><span class="article__title-label">Le petit guide pour tout comprendre aux élections européennes</span> </p> <p class="article__desc">Du 23 au 26 mai, tous les Européens pourront voter. Si on dit « les élections », c’est qu’il y en a plusieurs : en France, vous ne participerez pas à la même élection qu’en Italie ou en Espagne.</p> </div>
+                                 <p class="article__info">2 min de lecture </p>  </a>
+        </div>
+
+      </section> -->
+      <!-- fin le monde card-->
+
+      <h3>Activity feed</h3>
+
+      <a href="http://lewagon.github.io/html-css-challenges/13-activity-feed/" target="_blank">activity-feed source<br>
+        <img src="img/activity_feed.png" alt="">
+      </a>
+
+      <h3>Forms</h3>
+
+      <h4>Loggin</h4>
+
+      <a href="https://lewagon.github.io/bootstrap-challenges/10-Login-form/" target="_blank">Logging form source<br>
+        <img src="img/login-form.png" alt="">
+      </a>
+
+      <br>
+      <br>
+      <br>
+
+      <!-- chat room -->
+      <h4>Chat</h4>
+      <div class="container form-main">
+        <div class="row justify-content-center">
+          <div class="col-6">
+            <div id="chatroom" class="rounded">
+              <h1>CHAT-ROOM</h1>
+
+              <form action="#" id="comment-form">
+
+                <div class="form-group">
+                  <label for="your-message">Your comment</label>
+                  <textarea type="text" name="content" id="your-message" class="form-control" placeholder="Here is my message.."></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label for="your-name">From</label>
+                  <input type="text" name="content" id="your-name" class="form-control" placeholder="Bob">
+                </div>
+                <input type="submit" value="Send" class="btn btn-primary">
+              </form>
+
+              <div id="messages">
+                <ul class="list-unstyled">
+                  <li>A sample message (posted <span class="date">10 minutes ago</span>) by John</li>
+                </ul>
+
+                <button class="btn btn-danger" id="refresh">Refresh Chat</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3>Badge design</h3>
+      <img src="http://unsplash.it/50/50/?random" alt="" class="avatar">
+      <span class="badge-red badge">3</span>
+      <button type="button" class="btn btn-primary">
+      Profile <span class="badge badge-light">9</span>
+      <span class="sr-only">unread messages</span>
+      </button>
+
+
+      <h3>List design</h3>
+      <ul class="list-unstyled">
+        <li class="product">
+
+          <div class="product-upvote text-center">
+            <i class="fa fa-caret-up"></i>
+            <p>16</p>
+          </div>
+
+          <img src="http://unsplash.it/200/120/?random" alt="" class="product-image img-rounded">
+
+          <div class="product-description">
+            <h3>Intercom</h3>
+            <p>The best CRM tool.</p>
+          </div>
+
+          <ul class="list-inline product-controls">
+            <li><a href=""><i class="fa fa-heart"></i></a></li>
+            <li><a href=""><i class="fa fa-share"></i></a></li>
+            <li><a href=""><i class="fa fa-star"></i></a></li>
+          </ul>
+        </li>
+        <li class="product">
+
+          <div class="product-upvote text-center">
+            <i class="fa fa-caret-up"></i>
+            <p>16</p>
+          </div>
+
+          <img src="http://unsplash.it/200/120/?random" alt="" class="product-image img-rounded">
+
+          <div class="product-description">
+            <h3>Intercom</h3>
+            <p>The best CRM tool.</p>
+          </div>
+
+          <ul clashttps://lewagon.github.io/layouts-demo/flexbox-grid-layout.htmls="list-inline product-controls">
+            <li><a href=""><i class="fa fa-heart"></i></a></li>
+            <li><a href=""><i class="fa fa-share"></i></a></li>
+            <li><a href=""><i class="fa fa-star"></i></a></li>
+          </ul>
+        </li>
+        <li class="product">
+
+          <div class="product-upvote text-center">
+            <i class="fa fa-caret-up"></i>
+            <p>16</p>
+          </div>
+
+          <img src="http://unsplash.it/200/120/?random" alt="" class="product-image img-rounded">
+
+          <div class="product-description">
+            <h3>Intercom</h3>
+            <p>The best CRM tool.</p>
+          </div>
+
+          <ul class="list-inline product-controls">
+            <li><a href=""><i class="fa fa-heart"></i></a></li>
+            <li><a href=""><i class="fa fa-share"></i></a></li>
+            <li><a href=""><i class="fa fa-star"></i></a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <h2 class="text-center m-5" id="mise_en_page">3- Mises en page</h2>
+      <h3>Grid Layout with Map</h3>
+
+      <a href="https://lewagon.github.io/layouts-demo/flexbox-grid-layout.html" target="_blank">Grid Layout with Map source
+        <img src="img/Grid-layout-with-Map.png" alt="">
+      </a>
+
+      <h3>Slack copycat</h3>
+
+      <a href="https://lewagon.github.io/bootstrap-challenges/12-Slack/" target="_blank">Grid Layout with Map source
+        <img src="img/slack-copycat.png" alt="">
+      </a>
+
+      </div> <!-- fin container article principal -->
+
+
+    </div>
+
+    <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+/*for card polaroid, white and black*/
+
+.card-polaroid {
+  padding: 15px;
+  background-color: white;
+  width: 300px;
+  border-radius: 4px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin: 20px;
+}
+
+.card-polaroid img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.card-polaroid-black {
+  background-color: black;
+  box-shadow: 0 0 15px rgba(255,255,255,0.2);
+  color: white;
+}
+
+
+/*for card dribbble*/
+.card-white {
+  background-color: white;
+  border: 1px solid rgb(240, 240, 240);
+  padding: 8px;
+  width: 250px;
+}
+
+.card-white-image {
+  background-size: cover;
+  width: 100%;
+  height: 150px;
+}
+
+.card-white .list-inline {
+  color: #B0B0B0;
+  text-align: right;
+  padding-top: 8px;
+}
+
+.card-white .list-inline li {
+  margin-left: 8px;
+}
+
+/* Bevahior of a btn inside of a card (doesn't need to be in `button.css` */
+.card-white .btn-dribbble {
+  opacity: 0;
+  transition: .3s;
+}
+
+.card-white:hover .btn-dribbble {
+  opacity: 1;
+}
+
+.card-user {
+  margin-top: 8px;
+  /* intro to flexbox! */
+  display: flex;
+  align-items: center;
+
+}
+.card-user a {
+  color: #4B94BD;
+}
+
+.card-user a:hover {
+  color: #3F7EA3;
+}
+
+.card-user .avatar {
+  margin-right: 8px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+  margin: 0;
+}
+.list-inline li {
+  display: inline-block;
+}

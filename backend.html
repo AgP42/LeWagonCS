@@ -1,0 +1,170 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Backend Cheat Sheet</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Source+Serif+Pro" rel="stylesheet">
+<!--     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- Leave those next 4 lines if you care about users using IE8 -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <!-- avatar -->
+      <a class="navbar-brand" href="https://github.com/AgP42" target="_blank">
+        <img class="avatar" alt="avatar" src="https://kitt.lewagon.com/placeholder/users/AgP42" />
+      </a>
+      <!-- responsive button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#">1. Usefull links <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#UI_components">2. </a>
+          <a class="nav-item nav-link" href="#mise_en_page">3. </a>
+        </div>
+      </div>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="index.html">FrontEnd</a>
+          <a class="nav-item nav-link active" href="#">Backend</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="row">
+
+      <div class="container">
+
+      <h1 class="text-center m-5" id="usefull_links">Backend Cheat Sheet Le Wagon</h1>
+
+      <h2 class="text-center m-2" id="usefull_links">1- Usefull links</h2>
+
+      <div class="row">
+<!--
+        <div class="col-lg-4">
+          <div class="card p-2 m-1 bg-beige">
+            <h3>Components, ready to use</h3>
+            <a href="https://uikit.lewagon.com/documentation" class="btn btn-light btn-flat btn-flat m-2" target="_blank">Le Wagon UI Kit</a>
+            <a href="https://lewagon.github.io/ui-components/" class="btn btn-light btn-flat m-2" target="_blank">Le Wagon UI Components (older)</a>
+            <a href="https://codepen.io/" class="btn btn-light btn-flat m-2" target="_blank">Codepen (collection of modules + editor !)</a>
+            <a href="http://getbootstrap.com/components/" class="btn btn-light btn-flat m-2" target="_blank">Bootstrap components</a>
+          </div>
+        </div>
+ -->
+        <div class="col-lg-4">
+          <div class="card p-2 m-1 bg-beige">
+            <h3>Documentation</h3>
+            <a href="https://docs.google.com/document/d/1gob2n-B_mDoKxeN7O3gkl1lCtOh5EiaUswOu9zmEUBQ/edit" class="btn btn-light btn-flat m-2" target="_blank">Fiche Perso (GDoc)</a>
+            <a href="https://docs.google.com/document/d/1mDnD_FgWJ6h6QhRqPqhryY0FQcG9Z05ZSL7VZ32Q2Qg/edit#" class="btn btn-light btn-flat m-2" target="_blank">Fiche Git, Terminal, Sublim</a>
+            <a href="ruby-doc.org/core" class="btn btn-light btn-flat m-2" target="_blank">Ruby core</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card p-2 m-1 bg-beige">
+            <h3>Docu Le Wagon - To Do</h3>
+            <a href="https://kitt.lewagon.com/knowledge/lectures/04-Front-End%2F01-HTML-and-CSS#source" class="btn btn-light btn-flat m-2" target="_blank">Le Wagon Lecture HTML & CSS</a>
+            <a href="https://kitt.lewagon.com/knowledge/lectures/04-Front-End%2F02-CSS-components#source" class="btn btn-light btn-flat m-2" target="_blank">Le Wagon Lecture Components</a>
+            <a href="https://kitt.lewagon.com/knowledge/lectures/04-Front-End%2F03-Bootstrap#source" class="btn btn-light btn-flat m-2" target="_blank">Le Wagon Lecture Bootstrap & CSS Grid</a>
+            <a href="https://kitt.lewagon.com/knowledge/cheatsheets/flexbox" class="btn btn-light btn-flat m-2" target="_blank">Le Wagon - Flexbox</a>
+          </div>
+        </div>
+
+      </div>
+
+  <!--     <div class="row">
+
+        <div class="col-sm-6 col-lg-4 col-xl-3">
+          <div class="card p-2 m-1 bg-light">
+            <h3>Font</h3>
+            <a href="https://fonts.google.com/" class="btn bg-black-coral btn-flat m-2" target="_blank">Google font</a>
+            <a href="https://fontpair.co/" class="btn bg-black-coral btn-flat m-2" target="_blank">fontpair.co</a>
+            <a href="https://www.fontsquirrel.com/" class="btn bg-black-coral btn-flat m-2" target="_blank">fontsquirrel</a>
+            <a href="https://www.dafont.com/" class="btn bg-black-coral btn-flat m-2" target="_blank">dafont</a>
+            <a href="https://www.cssfontstack.com/" class="btn bg-black-coral btn-flat m-2" target="_blank">cssfontstack</a>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 col-xl-3">
+          <div class="card p-2 m-1 bg-light">
+            <h3>Color</h3>
+            <a href="https://colorhunt.co/" class="btn bg-acajou btn-flat m-2" target="_blank">colorhunt.co (color palettes)</a>
+            <a href="https://coolors.co/app" class="btn bg-acajou btn-flat m-2" target="_blank">coolors.co (palettes generator)</a>
+            <a href="https://picular.co/" class="btn bg-acajou btn-flat m-2" target="_blank">picular.co (colors according to keyword)</a>
+            <a href="https://color.adobe.com/fr/create/color-wheel/" class="btn bg-acajou btn-flat m-2" target="_blank">Adobe color-picker</a>
+            <a href="https://uigradients.com/#Bupe" class="btn bg-acajou btn-flat m-2" target="_blank">uigradients (css linear-gradient generator)</a>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 col-xl-3">
+          <div class="card p-2 m-1 bg-light">
+            <h3>Free Images</h3>
+            <a href="https://www.pexels.com/" class="btn bg-blondi-blue btn-flat m-2" target="_blank">pexels (free stock photos)</a>
+            <a href="https://unsplash.com/collections" class="btn bg-blondi-blue btn-flat m-2" target="_blank">unsplash (pictures free to use)</a>
+            <a href="https://picsum.photos/" class="btn bg-blondi-blue btn-flat m-2" target="_blank">picsum (random & img options)</a>
+            <a href="http://lorempixel.com/" class="btn bg-blondi-blue btn-flat m-2" target="_blank">lorempixel (random by keyword)</a>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 col-xl-3">
+          <div class="card p-2 m-1 bg-light">
+            <h3>Icones</h3>
+            <a href="https://fontawesome.com/start" class="btn bg-grey-spanish btn-flat m-2" target="_blank">fontawesome.com</a>
+            <a href="https://thenounproject.com/" class="btn bg-grey-spanish btn-flat m-2" target="_blank">thenounproject.com</a>
+            <a href="https://material.io/tools/icons/?style=baseline" class="btn bg-grey-spanish btn-flat m-2" target="_blank">Material design icons</a>
+            <a href="https://www.flaticon.com/" class="btn bg-grey-spanish btn-flat m-2" target="_blank">flaticon (free icons, with editor)</a>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 col-xl-3">
+          <div class="card p-2 m-1 bg-light">
+            <h3>Design inspiration</h3>
+            <a href="https://dribbble.com/" class="btn bg-lapis-lazuli btn-flat m-2" target="_blank">dribbble (Instagram for designers)</a>
+            <a href="https://getbootstrap.com/docs/4.2/examples/" class="btn bg-lapis-lazuli btn-flat m-2" target="_blank">Bootstrap examples</a>
+            <a href="https://www.awwwards.com/" class="btn bg-lapis-lazuli btn-flat m-2" target="_blank">awwwards (awards of website design)</a>
+            <a href="https://goodui.org/" class="btn bg-lapis-lazuli btn-flat m-2" target="_blank">GoodUI (UI ideas & best practices)</a>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 col-xl-3">
+          <div class="card p-2 m-1 bg-light">
+            <h3>Others</h3>
+            <a href="http://www.webdesigner.world/" class="btn bg-prune btn-flat m-2" target="_blank">webdesigner.world (List of other websites)</a>
+            <a href="https://www.typeform.com/" class="btn bg-prune btn-flat m-2" target="_blank">typeform (survey)</a>
+            <a href="https://logojoy.com/logo-maker/" class="btn bg-prune btn-flat m-2" target="_blank">logojoy (logo-maker)</a>
+          </div>
+        </div>
+
+      </div> --> <!-- fin row liens-->
+
+      <h2 class="text-center m-5" id="UI_components">2- blabla</h2>
+
+      <h3>Titre 3</h3>
+
+
+
+
+      </div> <!-- fin container article principal -->
+
+
+    </div>
+
+    <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
