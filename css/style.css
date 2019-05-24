@@ -1,5 +1,5 @@
 /* --- Google Fonts --- */
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700|Poppins:400,700");
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700|Poppins:400,700|Inconsolata:400");
 
 /* --- Fontawesome --- */
 @import url("https://use.fontawesome.com/releases/v5.7.1/css/all.css");
@@ -16,6 +16,7 @@
 @import url("components/list.css");
 @import url("components/color.css");
 @import url("components/form.css");
+@import url("components/code_box.css");
 
 body {
   font-family: "Open Sans", "Helvetica", "sans-serif";
@@ -23,10 +24,20 @@ body {
   background: #F0F1F5;
   padding-top: 50px;
 }
-h1, h2, h3, h4, h5 {
+p, h1, h2, h3, h4, h5 {
   font-family: "Montserrat", "sans-serif";
 }
 
 h2, h3, h4 {
-  margin: 5px;
+  margin: 8px;
+  padding: 15px;
+}
+
+p {
+  margin: 15px 0;
+}
+
+.card > h3 {
+  margin: 0;
+  padding: 0;
 }

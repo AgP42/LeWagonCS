@@ -34,127 +34,145 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-item nav-link active" href="#">1. Usefull links <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="#UI_components">2. </a>
-          <a class="nav-item nav-link" href="#mise_en_page">3. </a>
+          <a class="nav-item nav-link" href="#">2. </a>
+          <a class="nav-item nav-link" href="#">3. </a>
         </div>
       </div>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-item nav-link" href="main.html">Main</a>
           <a class="nav-item nav-link" href="frontend.html">FrontEnd</a>
-          <a class="nav-item nav-link active" href="backend.html">Backend</a>
+          <a class="nav-item nav-link active" href="backend.html">Backend/Rails</a>
         </div>
       </div>
     </nav>
 
+    <div class="container">
+
+    <h1 class="text-center m-5" id="usefull_links">Backend Cheat Sheet Le Wagon</h1>
+    <h2 class="text-center m-2" id="usefull_links">1- Usefull links</h2>
+
     <div class="row">
 
-      <div class="container">
-
-      <h1 class="text-center m-5" id="usefull_links">Backend Cheat Sheet Le Wagon</h1>
-      <h2 class="text-center m-2" id="usefull_links">1- Usefull links</h2>
-
-      <div class="row">
-
-        <div class="col-lg-4">
-          <div class="card p-2 m-1 bg-beige">
-            <h3>Documentation</h3>
-            <a href="https://docs.google.com/document/d/1gob2n-B_mDoKxeN7O3gkl1lCtOh5EiaUswOu9zmEUBQ/edit" class="btn btn-light btn-flat m-2" target="_blank">Fiche Perso (GDoc)</a>
-            <a href="ruby-doc.org/core" class="btn btn-light btn-flat m-2" target="_blank">Ruby core</a>
-          </div>
+      <div class="col-lg-4">
+        <div class="card p-2 m-1 bg-beige">
+          <h3>Documentation</h3>
+          <a href="https://docs.google.com/document/d/1gob2n-B_mDoKxeN7O3gkl1lCtOh5EiaUswOu9zmEUBQ/edit" class="btn btn-light btn-flat m-2" target="_blank">Fiche Perso (GDoc)</a>
+          <a href="ruby-doc.org/core" class="btn btn-light btn-flat m-2" target="_blank">Ruby core</a>
+          <a href="https://guides.rubyonrails.org/" class="btn btn-light btn-flat m-2" target="_blank">Ruby on Rails core</a>
+          <a href="https://kitt.lewagon.com/db/" class="btn btn-light btn-flat m-2" target="_blank">Le Wagon DB tool</a>
         </div>
-
-<!--         <div class="col-lg-4">
-          <div class="card p-2 m-1 bg-beige">
-            <h3>Docu Le Wagon</h3>
-            <a href="https://kitt.lewagon.com/knowledge/lectures" class="btn btn-light btn-flat m-2" target="_blank">Le Wagon Lectures</a>
-            <a href="https://kitt.lewagon.com/knowledge/tutorials" class="btn btn-light btn-flat m-2" target="_blank">Le Wagon Tutos</a>
-            <a href="https://kitt.lewagon.com/knowledge/cheatsheets/git_basics" class="btn btn-light btn-flat m-2" target="_blank">Le Wagon Cheatsheets</a>
-            <a href="https://kitt.lewagon.com/camps/244/flashcards" class="btn btn-light btn-flat m-2" target="_blank">Le Wagon Flashcards</a>
-          </div>
-        </div> -->
-
-<!--         <div class="col-lg-4">
-          <div class="card p-2 m-1 bg-beige">
-            <h3>Shortcuts</h3>
-            <a href="http://docs.sublimetext.info/en/latest/reference/keyboard_shortcuts_win.html" class="btn btn-light btn-flat btn-flat m-2" target="_blank">SublimText.info</a>
-            <a href="https://www.shortcutfoo.com/app/dojos/sublime-text-3-win/cheatsheet" class="btn btn-light btn-flat m-2" target="_blank">Sublim (shortcutfoo)</a>
-            <a href="https://regexr.com/" class="btn btn-light btn-flat m-2" target="_blank">Regexr (collection of RegEx)</a>
-            <a href="https://www.debuggex.com/" class="btn btn-light btn-flat m-2" target="_blank">Debuggex (visualisation)/</a>
-          </div>
-        </div> -->
-
       </div>
 
-     <div class="row">
+      <div class="col-sm-6 col-lg-4 col-xl-3">
+        <div class="card p-2 m-1 bg-light">
+          <h3>RegEx</h3>
+          <a href="https://rubular.com/" class="btn bg-black-coral btn-flat btn-flat m-2" target="_blank">Rubular</a>
+          <a href="https://regex101.com/" class="btn bg-black-coral btn-flat m-2" target="_blank">Regex101</a>
+          <a href="https://regexr.com/" class="btn bg-black-coral btn-flat m-2" target="_blank">Regexr (collection of RegEx)</a>
+          <a href="https://www.debuggex.com/" class="btn bg-black-coral btn-flat m-2" target="_blank">Debuggex (visualisation)/</a>
+          <a href="https://www.cssfontstack.com/" class="btn bg-black-coral btn-flat m-2" target="_blank">cssfontstack</a>
+        </div>
+      </div>
 
+    </div>
+
+    <h2 class="text-center m-5" id="">2- Rails/Git main terminal commands</h2>
+
+    <p>Launch localhost server : <code>rails s</code> Server on <a href="http://localhost:3000">http://localhost:3000</a> To kill it : Ctrl + C.
+    </p>
+    <p>Launch rails console : <code>rails c</code> Quit with <code>exit</code></p>
+    <p>Open the browser to the new repo : <code>hub browse </code></p>
+    <p>Open Sublim Text on the current folder : <code>stt</code></p>
+    <p>Display all rails routes : <code>rails routes</code></p>
+    <h3>For DataBases</h3>
+    <p><code>rails db:create</code> Create the db with empty schema</p>
+    <p><code>rails db:migrate</code> To write the first schema or any schema modif</p>
+    <p><code>rails db:seed</code> Run the db/seed.rb file</p>
+    <p><code>rails db:rollback</code> Reverse last migration. Can be launched several time to reverse several migrations. Then remove migration file manually</p>
+    <p><code>rails db:drop</code> Delete the DB</p>
+    <p><code>rails db:reset</code> Drop + redo the actual schema</p>
+
+    <h2 class="text-center m-5" id="">3- Start a new project and deploy it on Heroku</h2>
+
+    <div class="row">
       <div class="col-sm-6 col-lg-4 col-xl-3">
           <div class="card p-2 m-1 bg-light">
-            <h3>RegEx</h3>
-            <a href="https://rubular.com/" class="btn bg-black-coral btn-flat btn-flat m-2" target="_blank">Rubular</a>
-            <a href="https://regex101.com/" class="btn bg-black-coral btn-flat m-2" target="_blank">Regex101</a>
-            <a href="https://regexr.com/" class="btn bg-black-coral btn-flat m-2" target="_blank">Regexr (collection of RegEx)</a>
-            <a href="https://www.debuggex.com/" class="btn bg-black-coral btn-flat m-2" target="_blank">Debuggex (visualisation)/</a>
-            <a href="https://www.cssfontstack.com/" class="btn bg-black-coral btn-flat m-2" target="_blank">cssfontstack</a>
+            <h3>Links</h3>
+            <a href="https://kitt.lewagon.com/knowledge/lectures/05-Rails%2F01-Rails-intro#source" class="btn bg-prune btn-flat m-2" target="_blank">First rails lecture</a>
+            <a href="https://kitt.lewagon.com/knowledge/lectures/05-Rails%2F05-Rails-MC-with-images#source" class="btn bg-prune btn-flat m-2" target="_blank">Hosting lecture</a>
+            <a href="https://heroku.com/" class="btn bg-prune btn-flat m-2" target="_blank">Heroku.com</a>
           </div>
         </div>
+      </div>
 
- <!--          <div class="col-sm-6 col-lg-4 col-xl-3">
-          <div class="card p-2 m-1 bg-light">
-            <h3>Color</h3>
-            <a href="https://colorhunt.co/" class="btn bg-acajou btn-flat m-2" target="_blank">colorhunt.co (color palettes)</a>
-            <a href="https://coolors.co/app" class="btn bg-acajou btn-flat m-2" target="_blank">coolors.co (palettes generator)</a>
-            <a href="https://picular.co/" class="btn bg-acajou btn-flat m-2" target="_blank">picular.co (colors according to keyword)</a>
-            <a href="https://color.adobe.com/fr/create/color-wheel/" class="btn bg-acajou btn-flat m-2" target="_blank">Adobe color-picker</a>
-            <a href="https://uigradients.com/#Bupe" class="btn bg-acajou btn-flat m-2" target="_blank">uigradients (css linear-gradient generator)</a>
-          </div>
+
+      <div class="row">
+        <div class="container">
+
+          <h3>Create new project</h3>
+
+          <p><code>cd ~/code/$GITHUB_USERNAME</code>, donc : <code>cd ~/code/AgP42</code></p>
+          <p>New project with local SQLite DB :<code>rails new nom-du-projet --skip-active-storage</code></p>
+          <p>New project with production PostgreSQL DB :<code>rails new nom-du-projet --webpack --database=postgresql</code> Puis il faut créer la base avec <code>rails db:create</code></p>
+          <p>New project with Le Wagon minimal template : </p>
+          <p><code>rails new \
+  --database postgresql \
+  --webpack \
+  -m https://raw.githubusercontent.com/lewagon/rails-templates/master/minimal.rb \
+  CHANGE_THIS_TO_YOUR_RAILS_APP_NAME</code></p>
+
+          </p>First commit and push :</p>
+          <code>cd nom-du-projet</code>
+          <p>(<code>git init</code> is already done by rails new)<p>
+          <code>git add .</code>
+          <code>git commit -m "rails new"</code>
+          <code>hub create</code>
+          (<code>git remote -v</code>)
+          <code>git push origin master</code>
+
+          <h3>Create the main componenents of the project :</h3>
+
+          <p>Create a controller : <code>rails generate controller pages contact about</code></p>
+          <p>Create a model : </p>
+          <p><code>rails generate model Restaurant name:string stars:integer</code></p>
+          <p> ou <code>rails g model Review name content:text restaurant:references</code></p>
+          <p>Va créer la migration de la db associée. Si les types sont pas précisé : String</p>
+          <p>Ne pas oublier de migrer la base avec : <code>rails db:migrate</code></p>
+          <p><code>rails g migration AddAddressToRestaurants</code> Va créer une nouvelle migration pour la table <code>restaurants</code></p>
+
+          <p><code>rails destroy [...]</code> will reverse any <code>rails generate [...]</code> commands</p>
+
+          <h3>Quick Le Wagon Front-end setup</h3>
+
+          <code>yarn add bootstrap</code>
+          <code>yarn add jquery popper.js</code>
+          <p>ajouter dans le gemfile : <code>gem 'simple_form'</code></p>
+          <p><code>bundle install</code> <code>rails generate simple_form:install --bootstrap</code></p>
+          <p><code>mv app/assets/stylesheets/application.css app/assets/stylesheets/application.scss</code></p>
+          <p>in /* app/assets/stylesheets/application.scss */ <code>@import "bootstrap/scss/bootstrap";</code></p>
+
+          <h3>Deployment on Heroku</h3>
+
+          <p>Install Heroku : <code>wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh</code></p>
+          <p>Login : <code>heroku login</code></p>
+          <p>Create an Heroku app : <code>heroku create $YOUR_APP_NAME --region eu</code></p>
+          <p>Let's deploy : <code>git push heroku master</code></p>
+          <p>Migrate the db : <code>heroku run rails db:migrate</code></p>
+
+          <h5>Usefull commands :</h5>
+          <p>open in your browser : <code>heroku open</code></p>
+          <p>Show the app logs and keep listening : <code>heroku logs --tail</code></p>
+          <p>Run the production console : <code>heroku run rails c</code></p>
+          <p>Send config keys : <code>heroku config:set CLOUDINARY_URL=cloudinary://166....</code> and check with : <code>heroku config</code></p>
+
         </div>
+      </div>
 
-        <div class="col-sm-6 col-lg-4 col-xl-3">
-          <div class="card p-2 m-1 bg-light">
-            <h3>Free Images</h3>
-            <a href="https://www.pexels.com/" class="btn bg-blondi-blue btn-flat m-2" target="_blank">pexels (free stock photos)</a>
-            <a href="https://unsplash.com/collections" class="btn bg-blondi-blue btn-flat m-2" target="_blank">unsplash (pictures free to use)</a>
-            <a href="https://picsum.photos/" class="btn bg-blondi-blue btn-flat m-2" target="_blank">picsum (random & img options)</a>
-            <a href="http://lorempixel.com/" class="btn bg-blondi-blue btn-flat m-2" target="_blank">lorempixel (random by keyword)</a>
-          </div>
-        </div>
 
-        <div class="col-sm-6 col-lg-4 col-xl-3">
-          <div class="card p-2 m-1 bg-light">
-            <h3>Icones</h3>
-            <a href="https://fontawesome.com/start" class="btn bg-grey-spanish btn-flat m-2" target="_blank">fontawesome.com</a>
-            <a href="https://thenounproject.com/" class="btn bg-grey-spanish btn-flat m-2" target="_blank">thenounproject.com</a>
-            <a href="https://material.io/tools/icons/?style=baseline" class="btn bg-grey-spanish btn-flat m-2" target="_blank">Material design icons</a>
-            <a href="https://www.flaticon.com/" class="btn bg-grey-spanish btn-flat m-2" target="_blank">flaticon (free icons, with editor)</a>
-          </div>
-        </div>
+    <h2 class="text-center m-5" id="">4- helpers rails</h2>
 
-        <div class="col-sm-6 col-lg-4 col-xl-3">
-          <div class="card p-2 m-1 bg-light">
-            <h3>Design inspiration</h3>
-            <a href="https://dribbble.com/" class="btn bg-lapis-lazuli btn-flat m-2" target="_blank">dribbble (Instagram for designers)</a>
-            <a href="https://getbootstrap.com/docs/4.2/examples/" class="btn bg-lapis-lazuli btn-flat m-2" target="_blank">Bootstrap examples</a>
-            <a href="https://www.awwwards.com/" class="btn bg-lapis-lazuli btn-flat m-2" target="_blank">awwwards (awards of website design)</a>
-            <a href="https://goodui.org/" class="btn bg-lapis-lazuli btn-flat m-2" target="_blank">GoodUI (UI ideas & best practices)</a>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-lg-4 col-xl-3">
-          <div class="card p-2 m-1 bg-light">
-            <h3>Others</h3>
-            <a href="http://www.webdesigner.world/" class="btn bg-prune btn-flat m-2" target="_blank">webdesigner.world (List of other websites)</a>
-            <a href="https://www.typeform.com/" class="btn bg-prune btn-flat m-2" target="_blank">typeform (survey)</a>
-            <a href="https://logojoy.com/logo-maker/" class="btn bg-prune btn-flat m-2" target="_blank">logojoy (logo-maker)</a>
-          </div>
-        </div>  -->
-
-      </div><!-- fin row liens-->
-
-      <h2 class="text-center m-5" id="UI_components">2- blabla</h2>
-
-      <h3>Titre 3</h3>
-
+    <p>Links : <code><%= link_to "Know more about us", about_path %></code> Sortcut Sublim : lt + tab</p>
 
 
 
