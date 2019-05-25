@@ -60,7 +60,7 @@
           <a href="https://docs.google.com/document/d/1gob2n-B_mDoKxeN7O3gkl1lCtOh5EiaUswOu9zmEUBQ/edit" class="btn btn-light btn-flat m-2" target="_blank">Fiche Perso (GDoc)</a>
           <a href="ruby-doc.org/core" class="btn btn-light btn-flat m-2" target="_blank">Ruby core</a>
           <a href="https://guides.rubyonrails.org/" class="btn btn-light btn-flat m-2" target="_blank">Ruby on Rails core</a>
-          <a href="https://kitt.lewagon.com/db/" class="btn btn-light btn-flat m-2" target="_blank">Le Wagon DB tool</a>
+          <!-- <a href="https://kitt.lewagon.com/db/" class="btn btn-light btn-flat m-2" target="_blank">Le Wagon DB tool</a> -->
         </div>
       </div>
 
@@ -72,6 +72,17 @@
           <a href="https://regexr.com/" class="btn bg-black-coral btn-flat m-2" target="_blank">Regexr (collection of RegEx)</a>
           <a href="https://www.debuggex.com/" class="btn bg-black-coral btn-flat m-2" target="_blank">Debuggex (visualisation)/</a>
           <a href="https://www.cssfontstack.com/" class="btn bg-black-coral btn-flat m-2" target="_blank">cssfontstack</a>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4 col-xl-3">
+        <div class="card p-2 m-1 bg-light">
+          <h3>DataBases</h3>
+          <a href="https://kitt.lewagon.com/db/" class="btn bg-acajou btn-flat m-2" target="_blank">Le Wagon DB tool</a>
+          <a href="https://edgeguides.rubyonrails.org/active_record_basics.html" class="btn bg-acajou btn-flat m-2" target="_blank">ActiveRecord - Basocs</a>
+          <a href="https://edgeguides.rubyonrails.org/active_record_migrations.html" class="btn bg-acajou btn-flat m-2" target="_blank">ActiveRecord - migrations</a>
+          <!-- <a href="https://color.adobe.com/fr/create/color-wheel/" class="btn bg-acajou btn-flat m-2" target="_blank">Adobe color-picker</a> -->
+          <!-- <a href="https://uigradients.com/#Bupe" class="btn bg-acajou btn-flat m-2" target="_blank">uigradients (css linear-gradient generator)</a> -->
         </div>
       </div>
 
@@ -173,7 +184,35 @@
     <h2 class="text-center m-5" id="">4- helpers rails</h2>
 
     <p>Links : <code><%= link_to "Know more about us", about_path %></code> Sortcut Sublim : lt + tab</p>
+    <p>form_for : <code><%= form_for(@restaurant) do |f| %></code></p>
+    <p>simple_form : <code><%= simple_form_for [@restaurant, @review] do |f| %></code> Va renvoyer un HTTP request POST **`restaurant_reviews_path`**</p>
 
+
+
+    <h2 class="text-center m-5" id="">5- Routes</h2>
+
+    <p>Les 7 routes du CRUD en 1 ligne : <code>resources :restaurants</code></p>
+    <p>Correspond to : </p>
+    <div class="container">
+      <p><code>get    "restaurants",          to: "restaurants#index"</code></p>
+
+      <p><code>get    "restaurants/new",      to: "restaurants#new"</code></p>
+      <p><code>post   "restaurants",          to: "restaurants#create"</code></p>
+
+      <p>NB: The `show` route needs to be *after* `new` route.</p>
+      <p><code>get    "restaurants/:id",      to: "restaurants#show"</code></p>
+
+      <p><code>get    "restaurants/:id/edit", to: "restaurants#edit"</code></p>
+      <p><code>patch  "restaurants/:id",      to: "restaurants#update"</code></p>
+
+      <p><code>delete "restaurants/:id",      to: "restaurants#destroy"</code></p>
+    </div>
+
+    <p>Limiter à certaines : <code>resources :restaurants, only: [:create, :index, :destroy]</code></p>
+
+    <p>More infos : </p>
+    <a href="https://kitt.lewagon.com/knowledge/lectures/05-Rails%2F03-Rails-restaurant-reviews#source" class="btn bg-acajou btn-flat m-2" target="_blank">Advanced routing lecture</a>
+    <a href="https://guides.rubyonrails.org/routing.html" class="btn bg-acajou btn-flat m-2" target="_blank">Rails guide Routing</a>
 
 
       </div> <!-- fin container article principal -->
