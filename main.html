@@ -131,19 +131,30 @@
 
 
           <p>Rails : <code>gem install rails</code> If no version given : last one will be installed</p>
+
           <h4>Gems</h4>
-          <p>hub : to allow creating github repo from terminal <code>gem install hub</code></p>
-          <p>active record : gestion des DB : <code>gem install activerecord</code></p>
-          <p>faker : seed DB with fake datas : <code>gem install faker</code> and for usage : <a href="https://github.com/stympy/faker" class="btn bg-black-coral btn-flat m-2" target="_blank">Github Faker</a></p>
-          <p>rest-client : faire des appels API : <code>gem install rest-client</code> and for usage :</p>
-          <div class="container">
-            <p><code>require "json"</code></p>
-            <p><code>require "rest-client"</code></p>
+          <ul>
+            <li><p>hub : to allow creating github repo from terminal <code>gem install hub</code></p></li>
+            <li><p>active record : gestion des DB : <code>gem install activerecord</code></p></li>
+            <li><p>faker : seed DB with fake datas : <code>gem install faker</code> and for usage : <a href="https://github.com/stympy/faker" class="btn bg-black-coral btn-flat m-2" target="_blank">Github Faker</a></p></li>
+            <li><p>rest-client : faire des appels API : <code>gem install rest-client</code> and for usage :</p>
+            <div class="container">
+              <p><code>require "json"</code></p>
+              <p><code>require "rest-client"</code></p>
 
-            <p><code>response = RestClient.get "https://api.github.com/users/lewagon/repos"</code></p>
-            <p><code>repos = JSON.parse(response)</code> => repos is an `Array` of `Hashes`.</p>
+              <p><code>response = RestClient.get "https://api.github.com/users/lewagon/repos"</code></p>
+              <p><code>repos = JSON.parse(response)</code> => repos is an `Array` of `Hashes`.</p>
 
-          </div>
+            </div></li>
+            <li><p>byebug : break points : <code>gem install pry-byebug</code> and for usage :</p>
+            <div class="container">
+              <p><code>require "pry-byebug"</code></p>
+              <p>Breakpoints : <code>binding.pry</code></p>
+
+              <p>Dans le terminal qui lance le server : <code>continue</code> ou <code>next</code></p>
+
+            </div></li>
+          </ul>
 
         </div>
       </div>
