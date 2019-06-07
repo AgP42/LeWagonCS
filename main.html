@@ -36,7 +36,7 @@
           <a class="nav-item nav-link" href="#prep_computer">2. Prepare your computer</a>
           <a class="nav-item nav-link" href="#create_app">3. Step create app</a>
           <a class="nav-item nav-link" href="#orga_startup">4. Orga Start-up</a>
-          <a class="nav-item nav-link" href="#learn_next">5. Next ?</a>
+          <!-- <a class="nav-item nav-link" href="#learn_next">5. Next ?</a> -->
 
         </div>
       </div>
@@ -133,16 +133,28 @@
           <p>Rails : <code>gem install rails</code> If no version given : last one will be installed</p>
           <h4>Gems</h4>
           <p>hub : to allow creating github repo from terminal <code>gem install hub</code></p>
+          <p>active record : gestion des DB : <code>gem install activerecord</code></p>
+          <p>faker : seed DB with fake datas : <code>gem install faker</code> and for usage : <a href="https://github.com/stympy/faker" class="btn bg-black-coral btn-flat m-2" target="_blank">Github Faker</a></p>
+          <p>rest-client : faire des appels API : <code>gem install rest-client</code> and for usage :</p>
+          <div class="container">
+            <p><code>require "json"</code></p>
+            <p><code>require "rest-client"</code></p>
+
+            <p><code>response = RestClient.get "https://api.github.com/users/lewagon/repos"</code></p>
+            <p><code>repos = JSON.parse(response)</code> => repos is an `Array` of `Hashes`.</p>
+
+          </div>
+
         </div>
       </div>
 
       <h2 class="text-center m-5" id="create_app">3- Steps to create a web app</h2>
-      <h3>1. UX Product Pitch</h3>
-      <h3>2. Persona</h3>
-      <h3>3. User journey</h3>
-      <h3>4. User flow</h3>
-      <h3>5. Wireframe & Prototype</h3>
-      <h3>6. Mockup & Visual Identity</h3>
+      <h5>1. UX Product Pitch</h5>
+      <h5>2. Persona</h5>
+      <h5>3. User journey</h5>
+      <h5>4. User flow</h5>
+      <h5>5. Wireframe & Prototype</h5>
+      <h5>6. Mockup & Visual Identity</h5>
       <a href="docs/UX-&-UI-Design.pdf" class="btn bg-black-coral btn-flat m-2" target="_blank">UX-&-UI-Design</a>
 
 
