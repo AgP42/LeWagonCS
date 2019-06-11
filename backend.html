@@ -108,28 +108,8 @@
       <li><p>Open the browser to the new Git repo : <code>hub browse </code></p></li>
       <li><p>Open Sublim Text on the current folder : <code>stt</code></p></li>
     </ul>
-    <h3>For DataBases</h3>
-    <ul>
-      <li><p><code>rails db:create</code> Create the db with empty schema</p></li>
-      <li><p><code>rails db:migrate</code> To write the first schema or any schema modif</p></li>
-      <li><p><code>rails db:seed</code> Run the db/seed.rb file</p></li>
-      <li><p><code>rails db:rollback</code> Reverse last migration. Can be launched several time to reverse several migrations. Then remove migration file manually</p></li>
-      <li><p><code>rails db:drop</code> Delete the DB</p></li>
-      <li><p><code>rails db:reset</code> Drop + redo the actual schema</p></li>
-    </ul>
+
     <h2 class="text-center m-5" id="">3- Start a new project and deploy it on Heroku</h2>
-
-    <div class="row">
-      <div class="col-sm-6 col-lg-4 col-xl-3">
-          <div class="card p-2 m-1 bg-light">
-            <h3>Links</h3>
-            <a href="https://kitt.lewagon.com/knowledge/lectures/05-Rails%2F01-Rails-intro#source" class="btn bg-prune btn-flat m-2" target="_blank">First rails lecture</a>
-            <a href="https://kitt.lewagon.com/knowledge/lectures/05-Rails%2F05-Rails-MC-with-images#source" class="btn bg-prune btn-flat m-2" target="_blank">Hosting lecture</a>
-            <a href="https://heroku.com/" class="btn bg-prune btn-flat m-2" target="_blank">Heroku.com</a>
-          </div>
-        </div>
-      </div>
-
 
       <div class="row">
         <div class="container">
@@ -141,67 +121,6 @@
             <li><p>View : user interactions</p></li>
             <li><p>Routeur</p></li>
           </ul>
-
-
-          <h3>Create new project</h3>
-
-          <p><code>cd ~/code/$GITHUB_USERNAME</code>, donc : <code>cd ~/code/AgP42</code></p>
-          <p>Then create the project with one of the following method :</p>
-          <ul>
-            <li><p>New project with local SQLite DB :<code>rails new nom-du-projet --skip-active-storage</code></p></li>
-            <li><p>New project with production PostgreSQL DB :<code>rails new nom-du-projet --webpack --database=postgresql</code> Puis il faut créer la base avec <code>rails db:create</code></p></li>
-            <li><p>New project with Le Wagon minimal template : </p>
-            <p><code>rails new \
-  --database postgresql \
-  --webpack \
-  -m https://raw.githubusercontent.com/lewagon/rails-templates/master/minimal.rb \
-  CHANGE_THIS_TO_YOUR_RAILS_APP_NAME</code></p></li>
-          </ul>
-          </p>First commit and push :</p>
-          <code>cd nom-du-projet</code>
-          <p>(<code>git init</code> is already done by rails new)<p>
-          <code>git add .</code>
-          <code>git commit -m "rails new"</code>
-          <code>hub create</code>
-          (<code>git remote -v</code>)
-          <code>git push origin master</code>
-
-          <h3>Create the main components of the project :</h3>
-
-          <ul>
-            <li><p>Create a controller : <code>rails generate controller pages contact about</code></p>
-            <li><p>Create a model : </p></li>
-            <li><p><code>rails generate model Restaurant name:string stars:integer</code></p></li>
-            <li><p> ou <code>rails g model Review name content:text restaurant:references</code></p></li>
-            <li><p>Va créer la migration de la db associée. Si les types sont pas précisé : String</p></li>
-            <li><p>Ne pas oublier de migrer la base avec : <code>rails db:migrate</code></p></li>
-            <li><p><code>rails g migration AddAddressToRestaurants</code> Va créer une nouvelle migration pour la table <code>restaurants</code></p></li>
-            <li><p><code>rails destroy [...]</code> will reverse any <code>rails generate [...]</code> commands</p></li>
-          </ul>
-
-          <h3>Quick Le Wagon Front-end setup</h3>
-
-          <h4>This is included already if you created the project with the minimal template</h4>
-          <code>yarn add bootstrap</code>
-          <code>yarn add jquery popper.js</code>
-          <p>ajouter dans le gemfile : <code>gem 'simple_form'</code></p>
-          <p><code>bundle install</code> <code>rails generate simple_form:install --bootstrap</code></p>
-          <p><code>mv app/assets/stylesheets/application.css app/assets/stylesheets/application.scss</code></p>
-          <p>in /* app/assets/stylesheets/application.scss */ <code>@import "bootstrap/scss/bootstrap";</code></p>
-
-          <h3>Deployment on Heroku</h3>
-
-          <p>Install Heroku : <code>wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh</code></p>
-          <p>Login : <code>heroku login</code></p>
-          <p>Create an Heroku app : <code>heroku create $YOUR_APP_NAME --region eu</code></p>
-          <p>Let's deploy : <code>git push heroku master</code></p>
-          <p>Migrate the db : <code>heroku run rails db:migrate</code></p>
-
-          <h5>Usefull commands :</h5>
-          <p>open in your browser : <code>heroku open</code></p>
-          <p>Show the app logs and keep listening : <code>heroku logs --tail</code></p>
-          <p>Run the production console : <code>heroku run rails c</code></p>
-          <p>Send config keys : <code>heroku config:set CLOUDINARY_URL=cloudinary://166....</code> and check with : <code>heroku config</code></p>
 
         </div>
       </div>
