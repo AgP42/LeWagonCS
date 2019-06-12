@@ -109,55 +109,12 @@
       <li><p>Open Sublim Text on the current folder : <code>stt</code></p></li>
     </ul>
 
-    <h2 class="text-center m-5" id="">3- Start a new project and deploy it on Heroku</h2>
-
-      <div class="row">
-        <div class="container">
-
-          <h3>Think !</h3>
-          <ul>
-            <li><p>Model : quelles sont les infos à manipuler</p></li>
-            <li><p>Controller : contient toutes nos “user actions”</p></li>
-            <li><p>View : user interactions</p></li>
-            <li><p>Routeur</p></li>
-          </ul>
-
-        </div>
-      </div>
-
 
     <h2 class="text-center m-5" id="">4- helpers rails</h2>
 
     <p>Links : <code><%= link_to "Know more about us", about_path %></code> Sortcut Sublim : lt + tab</p>
     <p>form_for : <code><%= form_for(@restaurant) do |f| %></code></p>
     <p>simple_form : <code><%= simple_form_for [@restaurant, @review] do |f| %></code> Va renvoyer un HTTP request POST **`restaurant_reviews_path`**</p>
-
-
-
-    <h2 class="text-center m-5" id="">5- Routes</h2>
-
-    <p>Les 7 routes du CRUD en 1 ligne : <code>resources :restaurants</code></p>
-    <p>Correspond to : </p>
-    <div class="container">
-      <p><code>get    "restaurants",          to: "restaurants#index"</code></p>
-
-      <p><code>get    "restaurants/new",      to: "restaurants#new"</code></p>
-      <p><code>post   "restaurants",          to: "restaurants#create"</code></p>
-
-      <p>NB: The `show` route needs to be *after* `new` route.</p>
-      <p><code>get    "restaurants/:id",      to: "restaurants#show"</code></p>
-
-      <p><code>get    "restaurants/:id/edit", to: "restaurants#edit"</code></p>
-      <p><code>patch  "restaurants/:id",      to: "restaurants#update"</code></p>
-
-      <p><code>delete "restaurants/:id",      to: "restaurants#destroy"</code></p>
-    </div>
-
-    <p>Limiter à certaines : <code>resources :restaurants, only: [:create, :index, :destroy]</code></p>
-
-    <p>More infos : </p>
-    <a href="https://kitt.lewagon.com/knowledge/lectures/05-Rails%2F03-Rails-restaurant-reviews#source" class="btn bg-acajou btn-flat m-2" target="_blank">Advanced routing lecture</a>
-    <a href="https://guides.rubyonrails.org/routing.html" class="btn bg-acajou btn-flat m-2" target="_blank">Rails guide Routing</a>
 
 
       </div> <!-- fin container article principal -->
